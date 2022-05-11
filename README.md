@@ -1,2 +1,2 @@
 # TIL
-Today I Learned with Lionlike
+Today I Learned with LikeLion

@@ -27,3 +27,36 @@ fdr.__version__
 * NASDAQ : 나스닥 종목
 * NYSE : 뉴욕증권거래소 종목
 * SP500 : S&P500 종목
+
+```python
+# 나스닥 종목 가져오기
+df = fdr.StockListing('NASDAQ')
+```
+## 기술분석
+```python
+# 행과 열의 크기를 봅니다.
+df.shape
+```
+```python
+# 전체 데이터프레임의 요약정보를 봅니다.
+df.info()
+```
+```python
+# head 로 미리보기
+df.head()
+# tail 로 미리보기
+df.tail()
+```
+```python
+# 기술통계 값을 요약합니다.
+df.describe(datetime_is_numeric=False)
+```
+## 파일로 저장하고 불러오기
+```python
+# to_csv로 Dataframe을 데이터 저장용 파일인 CSV 파일로 바꿀 수 있습니다.
+df.to_csv("nasdaq.csv")
+```
+```python
+# CSV로 저장된 파일을 다시 DataFrame으로 읽어서 확인해 봅니다.
+pd.read_csv("nasdaq.csv", index_col=0)
+```

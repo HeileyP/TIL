@@ -1,7 +1,7 @@
 # TIL
 
-* Today I Learned with LikeLion
+* Today I Learned
 ---
 ```
-멋쟁이사자에서의 3달간의 여정
+
 ```

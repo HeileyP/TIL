@@ -54,9 +54,9 @@ df.describe(datetime_is_numeric=False)
 ## 파일로 저장하고 불러오기
 ```python
 # to_csv로 Dataframe을 데이터 저장용 파일인 CSV 파일로 바꿀 수 있습니다.
-df.to_csv("nasdaq.csv")
+df.to_csv("NASDAQ.csv")
 ```
 ```python
 # CSV로 저장된 파일을 다시 DataFrame으로 읽어서 확인해 봅니다.
-pd.read_csv("nasdaq.csv", index_col=0)
+pd.read_csv("NASDAQ.csv", index_col=0)
 ```

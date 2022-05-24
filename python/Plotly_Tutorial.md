@@ -69,6 +69,7 @@ plotly 개발자가 컬럼의 이름을 지정하자고 약속하고 그 안에 
 # df_1.columns 의 name을 "company"로 지정하기
 df_1.columns.name = "company"
 ```
+
 px.area로 수익률 분포 그리기
 * facet_col을 통해 서브플롯을 그릴 수 있습니다.
 * facet_clo_wrap 한 줄에 몇 개의 그래프를 보여줄 것인가를 지정합니다.
@@ -76,6 +77,8 @@ px.area로 수익률 분포 그리기
 px.area(df_1, facet_col="company", facet_col_wrap=2)
 ```
 
+* df_1로는 왜 hover 설정이 안되는건가요?
+안 되는건 아니고 date 가 index 로 되어 있어서 컬럼으로 접근할 수 없습니다.
 
 ### 데이터 분석에 관한 지나가는 이야기
 ---
